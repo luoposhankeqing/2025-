@@ -1,0 +1,64 @@
+胎儿Y染色体浓度分析结论报告
+生成时间: 2025-09-06 23:39:11
+输出目录: C:\Users\HU-Guohang\Desktop\pythonProject\国赛C题代码\最终代码\Problem1 results
+
+1. 数据基本信息
+   - 有效样本数量: 1064
+   - 孕周范围: 11.00 - 29.00 周
+   - BMI范围: 20.70 - 39.90
+   - Y染色体浓度范围: 0.0100 - 0.2342
+
+2. 模型性能比较
+   - RandomForest:
+       R²: 0.4102
+       RMSE: 0.0255
+       MAE: 0.0202
+       MSE: 0.0006
+   - GAM:
+       R²: 0.1512
+       RMSE: 0.0306
+       MAE: 0.0244
+       MSE: 0.0009
+   - NeuralNet:
+       R²: 0.1256
+       RMSE: 0.0310
+       MAE: 0.0248
+       MSE: 0.0010
+   - Polynomial:
+       R²: 0.0672
+       RMSE: 0.0320
+       MAE: 0.0259
+       MSE: 0.0010
+   - Linear:
+       R²: 0.0425
+       RMSE: 0.0325
+       MAE: 0.0263
+       MSE: 0.0011
+   - 最佳模型: RandomForest (R²: 0.4102)
+
+3. GAM模型详细分析
+   - 模型性能:
+       R²: 0.1566
+       RMSE: 0.0305
+   - 特征影响分析图表已保存至: C:\Users\HU-Guohang\Desktop\pythonProject\国赛C题代码\最终代码\Problem1 results\GAM_Detailed_Analysis
+
+4. 分析过程日志
+==================================================
+正在读取数据: 附件.xlsx
+开始数据预处理...
+数据预处理完成，保留了 1064 条有效数据
+开始训练比较模型...
+正在训练 Linear 模型...
+正在训练 Polynomial 模型...
+正在训练 GAM 模型...
+正在训练 RandomForest 模型...
+正在训练 NeuralNet 模型...
+模型比较训练完成!
+开始训练详细GAM模型...
+详细GAM模型训练完成!
+模型评估指标 - R²: 0.1566, RMSE: 0.0305
+计算置信区间时出错: too many values to unpack (expected 2)
+计算置信区间时出错: too many values to unpack (expected 2)
+GAM详细分析图已保存至: Problem1 results\GAM_Detailed_Analysis\GAM平滑曲线_分组优化版.png
+
+==================================================
